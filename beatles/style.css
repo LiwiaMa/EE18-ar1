@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Shadows+Into+Light&display=swap');
+body {
+    background-image: url("./bilder/davide-ragusa-YfSN8fHIGdo-unsplash.jpg");
+    background-size: contain;
+    background-attachment: fixed
+}
+h1 {
+    color: black;
+    font-size: 50px;
+    font-family: 'Kaushan Script', cursive;
+
+
+}
+h2 {
+    color: black;
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+}
+p {
+    color: black;
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+
+
+}
+a {
+    color: aqua;
+}
