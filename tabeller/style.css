@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Chilanka&display=swap');
+body{
+
+}
+table{
+    width: 1500px;
+    background: cadetblue;
+    border-spacing: 10px;
+    table-layout: fixed
+
+}
+caption{
+    font-family: 'Chilanka', cursive;
+    font-size: 80px;
+    background-image: url("./bilder/photo-1479981280584-037818c1297d.jpg");
+    background-size: cover;
+
+
+}
+tr{
+
+}
+th{
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    padding: 10px;
+}
+td{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    background: white;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+img{
+    width: 100%;
+    border-radius: 30px;
+}

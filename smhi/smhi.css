@@ -1,0 +1,26 @@
+body{
+    border: 10px solid white;
+
+}
+table{
+    width: 700px;
+    height: 500px;
+    border-collapse: collapse;
+
+}
+caption{
+
+}
+tr{
+    border: 1px solid white;
+}
+th{
+    border: 10px solid whit;
+
+}
+td{
+    border: 10px solid white;
+}
+img{
+    white-space: 50px;
+}
