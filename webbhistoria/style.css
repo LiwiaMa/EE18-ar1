@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
+h1{
+    font-family: 'Saira Stencil One', cursive; color: aliceblue;
+}
+h2{
+    font-family: 'Luckiest Guy', cursive; color: aliceblue;
+
+}
+p{
+    font-family: 'Luckiest Guy', cursive; color: aliceblue;
+}
+body{
+    background-image: url(./bilder/umberto-FewHpO4VC9Y-unsplash\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
