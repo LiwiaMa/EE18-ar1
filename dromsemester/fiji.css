@@ -10,6 +10,7 @@ h1{
     margin-left: 200px;
     margin-top: 150px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 h2{
     font: 50px sans-serif;
@@ -22,11 +23,12 @@ h2{
 p{
     margin-left: 1000px;
     margin-top: 200px;
-    font:40px sans-serif;
+    font:30px sans-serif;
     background-color: rosybrown;
     border: 3px solid white;
     padding: 30px;
     border-radius: 10px;
     width: 200px;
+    text-align: center;
 
 }
