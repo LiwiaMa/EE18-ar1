@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Indie+Flower&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* utseende på sidan */
+body{
+    background: url("./bilder/photo-1457785097656-8ac31dcf679f.jpg");
+    width: 500px;
+    background-size: cover;
+
+}
+
+
+    /* utseende på boxwn */
+div{
+    background:#FEFF99;
+    width: 600px;
+    height: 750px;
+    border-radius: 40px;
+    margin: 40px 0 0 500px;
+    border: 20px solid #CB832F;
+    padding: 10px 40px 40px 30px;
+}
+/* utseende på innehållet */
+h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 35px;
+    color: rgb(121, 84, 41);
+    margin-bottom: 5px;
+}
+p{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    color: rgb(121, 84, 41);
+    margin-bottom: 5px;
+}
+h2{
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    color: rgb(121, 84, 41);
+    margin-bottom: 5px;
+}ul{
+    list-style: none;
+}
+li{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    color: rgb(121, 84, 41);
+
+}
+.beskrivning{
+    font-weight: bold;
+}

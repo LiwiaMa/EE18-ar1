@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Permanent+Marker&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: rgb(184, 175, 175);
+}
+div{
+    width: 700px;
+    background: url("./bilder/498d4c3a.jpg");
+    padding: 30px 30px 30px 200px;
+    height:400px;
+    margin: 100px auto 0  auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgb(3, 3, 3);
+
+}
+h1{
+    font-family: 'Permanent Marker', cursive;
+    color: aliceblue;
+    margin-left: 100px;
+}
+h2{
+   
+    font-family: 'Indie Flower', cursive; 
+    color: aliceblue;
+    margin-left: 100px;
+}
+p{
+    color: aliceblue;
+    margin-left: 100px;
+    
+}
