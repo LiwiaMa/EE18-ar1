@@ -21,6 +21,22 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     background: url("./bilder/pattern002.jpg");
 }
 
+.sida3{
+    background: url("./bilder/ppt.jpg");
+}
+
+.sida4{
+    background: url("./bilder/p.jpg");
+}
+
+.sida5{
+    background: url("./bilder/pt.jpg");
+}
+
+.sida6{
+    background: url("./bilder/pngtree-polygonal-triangle-black-and-white-background-image_285395.jpg");
+}
+
 /* Utseende på boxen */
 div{
     background-color: rgb(167, 167, 167);
