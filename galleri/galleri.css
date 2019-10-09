@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Notable&display=swap');
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -9,43 +9,75 @@ html {
 body, h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
-    
-}
 
-body{
+}
+/* CSS clearfix mot box-kollaps */
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+
+/* Utseemde på sidan */
+body {
     background: url("./bilder/bild7.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
-.kontainer{
+.kontainer {
     font-family: 'Chewy', cursive;
     background: rgba(255, 255, 255, 0.524);
     margin: auto;
     width: 800px;
-    padding:50px;
-}
-h1{
-    font-family: 'Chewy', cursive;
-    background: rgb(255, 255, 255);
+    padding: 50px;
     
 }
-.intro{
+h1 {
+    font-family: 'Notable', sans-serif;
+    font: color rgb(213, 213, 213);
+    text-align: center;
+    font-size: 50px;
 
 }
+.intro {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+}
 /* Utseende på rutorna */
-.ruta{
-    background:rgb(255, 255, 255);
+.ruta {
+    background: rgb(0, 0, 0);
     color: rgb(174, 183, 191);
+    border-radius: 10px;
+    padding: 50px;
+    margin-top: 50px;
+}
+hr {
+    clear: both;
+    visibility: hidden;
     
 }
-img{
+img {
     width: 400px;
     background: #FFF;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
-.bildtext{
+.bildtext {
 
+}
+.vänster {
+    float: left;
+    margin-right: 25px;
+}
+.höger {
+    float: right;
+    margin-left: 25px;
+}
+.textHöger{
+    text-align: right;
 }
 /* Utseende på  */
