@@ -17,20 +17,20 @@ body{
 }
 .sidan{
     font-family: 'Caveat', cursive;
-    width:700px;
+    width:900px;
     background: rgb(148, 218, 238);
     padding: 50px;
-    margin: 50px 500px 50px 400px;
+    margin: 50px 500px 50px 300px;
     border-radius: 10px;
     box-shadow: 0 0 50px #FFF;
 }
 h1{
     font-family: 'Ranga', cursive;
-    font-size: 50px;
+    font-size: 70px;
     text-transform: uppercase;
     text-shadow: 3px 3px 10px;
     color: rgb(0, 0, 0);
-    padding: 0 40px 0 200px;
+    padding: 0 100px 0 290px;
  
 }
 /* Utseendet på inläggen */
@@ -39,13 +39,17 @@ h1{
     padding:50px;
     margin: 15px 0 15px 0;
 }
-img{
+.bild {
     width: 100%;
+    padding: 30px;
+    background: #FFF;
+    box-shadow: 3px 3px 10px;
 }
 h2{
     font-family: 'Ranga', cursive;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 40px;
+    margin-top: 20px;
 }
 .datum{
     font-family: 'Ranga', cursive;
@@ -54,9 +58,11 @@ h2{
 }
 p{
   font-family: 'Architects Daughter', cursive;
+  margin: 10px 0 10px 0;
     
 }
 /* Utseende på sidfoten */
-.sidfot{
-
+.namn{
+    font-style: italic;
+    font-size: 30px;
 }
