@@ -68,7 +68,7 @@ body{
 /* Innehållets utseende */
 .kontainer h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Bangers', cursive;
   
 }
@@ -85,6 +85,7 @@ body{
 .kontainer figure figcaption{
     font-family: 'Anton', sans-serif;
     text-align: center;
+    font-size: 25px;
 
 }
 .kontainer p{
