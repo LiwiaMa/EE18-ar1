@@ -1,0 +1,88 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("./bilder/photo-1445905595283-21f8ae8a33d2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1.meny{
+    margin-left: 5px;
+    font-size: 50px;
+    color: rgb(27, 147, 160);
+    text-align: center;
+}
+ /* Utseende på meny */
+ body.sidhuvud {
+
+}
+.kontainer .meny li{
+    list-style-type: none;
+    display: inline;
+}
+li{
+
+}
+.kontainer div{
+    padding: 20px;
+}
+
+.kontainer .meny a{
+    background: rgba(0, 133, 142, 1);
+    padding: 5px;
+    color:rgba(224, 245, 245, 1);
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 0 3px;
+    box-shadow: 3px 3px 0 #000;
+    width: 200px;
+    font-size: 25px;
+}
+.kontainer .meny{
+    text-align: center;
+    margin: 30px 0;
+    margin-top: 50px;
+}
+
+body.sidhuvud img {
+    margin-left: 80px; 
+}
+div.text{
+    width: 800px;
+    margin: 100px 350px;
+    background: rgba(30, 29, 29, 0.442);
+    border-radius: 7px;
+    border: solid 7px rgb(46, 193, 209);
+}
+.text p{
+    font-size: 20px;
+    color: rgb(199, 191, 191);
+    margin-bottom: 20px;
+}
+.text h1{
+    color: rgb(199, 191, 191);
+    padding: 5px 10px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+.text h2{
+    color: rgb(199, 191, 191);
+    padding: 5px 10px;
+}
+.kontainer .meny a:hover{
+    background:rgba(71, 193, 191, 1);
+    
+}
+.kontainer .meny .aktiv{
+    background: rgba(71, 193, 191, 1);
+    }

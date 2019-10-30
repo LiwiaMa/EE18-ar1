@@ -10,20 +10,19 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 body{
- background-image:url("./bilder/pattern\ 1.jpg")
+ background-color: #000 ;
 }
-div{
-    width: 2000px;
-    margin: 50px 350px;
-}
+
 h1{
 
 }
 div.kontainer{
     width: 800px;
     padding: 50px;
-    background: #FFF;
+    background:rgb(152, 145, 145);
     margin: 0 auto;
+    border-radius: 10px;
+    border: solid 5px rgb(255, 255, 255);
 }
 ul{
 
@@ -34,8 +33,34 @@ li{
 img{
 
 }
+.kontainer figure{
+    margin: 0 auto;
+    border: solid 5px #FFF;
+    background: #FFF;
+}
+.kontainer img{
+    margin: 0 auto;
+}
 p{
 
 }
 
-.
+.kontainer .meny li{
+    display: inline;
+    list-style: none;
+}
+.kontainer .meny a{
+    background: rgba(0, 133, 142, 1);
+    padding: 5px;
+    color:rgba(224, 245, 245, 1);
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 10px 4px;
+    box-shadow: 3px 3px 0 #000;
+    display: inline-block;
+    width: 115px;
+}
+
+.kontainer .meny a:hover{
+    background: rgb(23, 189, 159);
+}
