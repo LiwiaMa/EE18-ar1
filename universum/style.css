@@ -8,7 +8,8 @@ html {
 body, h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
-/* Body */
+
+    /* Body */
 }
 body.universum{
     background-image: url("./bilder/17520.jpg");
@@ -35,6 +36,7 @@ body.universum5{
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* Rubriker */
 h1{
     margin-left: 5px;
     font-size: 50px;
@@ -54,6 +56,28 @@ h1.meny{
     font-size: 50px;
     color: rgb(27, 147, 160);
     text-align: center;
+}
+.text h1{
+    color: rgb(199, 191, 191);
+    padding: 5px 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+}
+.kontainer .space h1{
+    color: rgb(199, 191, 191);
+    text-align: center;
+    font-size: 35px;
+}
+ .kontainer .size h1{
+     color: rgb(199, 191, 191);
+     text-align: center;
+     font-size: 35px;
+}
+.kontainer .beskrivning h1{
+    color: rgb(199, 191, 191);
+    text-align: center;
+    font-size: 35px;
 }
  /* Utseende på meny */
  
@@ -90,7 +114,7 @@ h1.meny{
     background: rgba(71, 193, 191, 1);
 }
 
-/* Första sidan */
+/* Div 1 */
 div.text{
     width: 800px;
     margin: 100px 350px;
@@ -115,11 +139,12 @@ div.text{
     color: rgb(199, 191, 191);
     margin-bottom: 20px;
 }
+/* bilder */
 .kontainer img{
     margin: 30px 50px;
-}
+ }
+ /* vart text och bilder ska ligga */
 .kontainer .beskrivning{
-    width: 800px;
     margin: 80px 350px;
     background: rgba(30, 29, 29, 0.442);
     border-radius: 7px;
@@ -154,77 +179,27 @@ div.text{
 }
 .kontainer .size .right{
     float: right;
-    margin-left: auto 25px;
+    margin-left: 25px;
 }
 .kontainer .space .right{
     float: right;
-    margin-left: auto 25px;
+    margin-left: 25px;
 }
 .kontainer .text .right{
     float: right;
     margin-left: 25px;
 }
 
-}
-
 .kontainer .size p{
     font-size: 20px;
     color: rgb(199, 191, 191);
     margin-bottom: 20px;
-}
-.kontainer .size p{
-    font-size: 20px;
-    color: rgb(199, 191, 191);
-    margin-bottom: 20px;
-}
-    
-/* Rubriker */
-.text h1{
-    color: rgb(199, 191, 191);
-    padding: 5px 10px;
-    font-weight: bold;
-    text-align: center;
-    font-size: 35px;
-}
-.kontainer .space h1{
-    color: rgb(199, 191, 191);
-    text-align: center;
-    font-size: 35px;
-}
- .kontainer .size h1{
-     color: rgb(199, 191, 191);
-     text-align: center;
-     font-size: 35px;
-}
-.kontainer .beskrivning h1{
-    color: rgb(199, 191, 191);
-    text-align: center;
-    font-size: 35px;
 }
 
 /* Källor */
-.kontainer .text a{
+.kalla{
     text-decoration: none;
     font-weight: bold;
     color: #2EC1D1; 
     font-size: 17px;
 }
-.kontainer .space a{
-    text-decoration: none;
-    font-weight: bold;
-    color: #2EC1D1; 
-    font-size: 17px;
-}
-.kontainer .beskrivning a{
-    text-decoration: none;
-    font-weight: bold;
-    color: #2EC1D1; 
-    font-size: 17px;
-    }
-
-.kontainer .size a{
-    text-decoration: none;
-    font-weight: bold;
-    color: #2EC1D1; 
-    font-size: 17px;
-    }
