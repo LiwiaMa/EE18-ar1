@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+
+</head>
+<body>
+    <div class="kontainer kol3">
+        <img id="bild1" src="./foton/road.jpg" alt="road">
+        <img id="bild2" src="./foton/forest.jpg" alt="forrest">
+        <img id="bild3" src="./foton/fox.jpg" alt="fox">
+
+        <button onclick="svartVit()">Svart/vit</button>
+        <button onclick="sepia()">Sepia</button>
+        <button onclick="invert()">Invert</button>
+    </div>
+    <script>
+        /* Element vi skall arbeta med */
+        const elementBild1 = document.querySelector("#bild1");
+        const elementBild2 = document.querySelector("#bild2");
+        const elementBild3 = document.querySelector("#bild3");
+
+        function svartVit() {
+            elementBild1.classList.toggle("gråskala");
+            elementBild2.classList.toggle("gråskala");
+            elementBild3.classList.toggle("gråskala");
+        }
+
+        function sepia() {
+            elementBild1.classList.toggle("sepia");
+            elementBild2.classList.toggle("sepia");
+            elementBild3.classList.toggle("sepia");
+        }
+
+        function invert() {
+            elementBild1.classList.toggle("invert");
+            elementBild2.classList.toggle("invert");
+            elementBild3.classList.toggle("invert");
+
+        }
+    </script>
+</body>
+</html>

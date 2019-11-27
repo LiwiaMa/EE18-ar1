@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+
+</head>
+<body>
+    <div class="kontainer">
+        <img id="bild1" src="./foton/road.jpg" alt="road">
+
+    </div>
+    <script>
+        /* Element vi skall arbeta med */
+
+        const elementBild1 = document.querySelector("#bild1");
+
+        setInterval(flasha, 1000);
+
+        function flasha() {
+            elementBild1.classList.toggle("styrka")
+
+        }
+    </script>
+</body>
+</html>
