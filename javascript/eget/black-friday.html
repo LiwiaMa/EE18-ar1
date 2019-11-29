@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Black Friday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="black-friday">
+    <div class="kontainer">
+        <h1 id="rubrik1">Black friday</h1> <hr>
+        <figure>
+            <img class="img1" src="./bilder/Iphone11.png" alt="Iphone11">
+            <figcaption>Iphone 11, bara för 8990 kr! <br>
+                Spara 800 kr
+            </figcaption>
+        </figure>
+        
+    </div>
+    <script>
+
+        const elementRubrik1 = document.querySelector("#rubrik1");
+
+        setInterval(flasha, 1000);
+
+        function flasha() {
+            elementRubrik1.classList.toggle("dold");
+        }
+
+
+    </script>
+</body>
+</html>

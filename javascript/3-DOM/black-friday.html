@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Black Friday</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <img class="dold" src="./foton/road.jpg" alt="road">
+    </div>
+    <script>
+        /* Element vi arbetar med  */
+        const elemetImg = document.querySelector("img");
+        
+        /* Fördröjning */
+        setTimeout(visaBild, 3000);
+
+        function visaBild() {
+            elemetImg.classList.remove("dold");
+            
+        }
+    </script>
+</body>
+</html>
