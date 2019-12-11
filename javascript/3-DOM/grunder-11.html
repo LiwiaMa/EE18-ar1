@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1 onclick="visaTittel()">Klicka på mig</h1>
+
+        <p onclick="visaVers()">Klicka på mig också!</p>
+    </div>
+    <script>
+        /* Element vi skall arbeta med */
+        const elementRubrik = document.querySelector("h1");
+        const elementP = document.querySelector("p");
+
+        function visaTittel() {
+            elementRubrik.textContent = "Wake me up"
+        }
+     function visaVers() {
+         elementP.innerHTML =  "Feeling my way through the darkness, <br> " +
+                               "Guided by a beating heart <br>" + 
+                               "I can't tell where the journey will end <br>" +
+                               "But I know where to start <br>" + 
+                               "They tell me I'm too young to understand <br>" +
+                               "They say I'm caught up in a dream <br>" +
+                               "Well life will pass me by if I don't open up my eyes <br>" +
+                               "Well that's fine by me <br>" +
+                               "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/IcrbM1l_BoI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+
+     }
+
+    </script>
+</body>
+</html>

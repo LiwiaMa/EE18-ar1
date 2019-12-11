@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* Styla kalendern */
+body {
+    background-image: url("./bilder/skidor1.jpg");
+}
+.kontainer {
+    background: rgba(103, 103, 175, 0.659);
+    width: 700px;
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    text-align: center;
+}
+/* knep för att få sidan i mitten av webbläsarfönstret */
+html, body{
+    height: 100%;
+}
+.mitten{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kontainer h1 {
+
+}
+h1 {
+    font-size: 50px;
+}
+.kalender {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 15px;
+    padding: 10px;
+    justify-content: space-around;
+}
+.ruta {
+    font-size: 40px;
+    background: darkblue;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ruta:hover {
+    background: rgb(112, 159, 206);
+    box-shadow: 0 0 10px #FFF;
+}
+.snowman1 {
+    font-size: 0;
+    background: url("./bilder/winter-snowman1.jpg") center;
+    background-size: 80px 80px;
+    animation: tona 2s;
+    pointer-events: none;
+
+}
+.snowmanText {
+    font: 12px sans-serif;
+    padding: 10px;
+    background: rgb(47, 141, 235);
+    animation: tona 2s;
+    pointer-events: none;
+}
+@keyframes tona {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

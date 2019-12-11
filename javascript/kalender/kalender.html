@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>December</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="kalender.css">
+</head>
+<body>
+    <div class="mitten">
+        <div class="kontainer">
+            <h1>December</h1>
+            <div class="kalender">
+                <div class="ruta animated dag1" onclick="öppnaDag1()">1</div>
+                <div class="ruta animated dag2" onclick="öppnaDag2()">2</div>
+                <div class="ruta animated dag3" onclick="öppnaDag3()">3</div>
+                <div class="ruta animated dag4" onclick="öppnaDag4()">4</div>
+                <div class="ruta animated dag5" onclick="öppnaDay()">5</div>
+                <div class="ruta animated dag6" onclick="öppnaDag6()">6</div>
+                <div class="ruta animated dag7" onclick="öppnaDag7()">7</div>
+                <div class="ruta animated dag8" onclick="öppnaDag8()">8</div>
+                <div class="ruta animated dag9" onclick="öppnaDag9()">9</div>
+                <div class="ruta animated dag10" onclick="öppnaDag10()">10</div>
+                <div class="ruta animated dag11" onclick="öppnaDag11()">11</div>
+                <div class="ruta animated dag12" onclick="öppnaDag12()">12</div>
+                <div class="ruta animated dag13" onclick="öppnaDag13()">13</div>
+                <div class="ruta animated dag14" onclick="öppnaDag14()">14</div>
+                <div class="ruta animated dag15" onclick="öppnaDag15()">15</div>
+                <div class="ruta animated dag16" onclick="öpnnaDag16()">16</div>
+                <div class="ruta animated dag17" onclick="öppnaDag17()">17</div>
+                <div class="ruta animated dag18" onclick="öppnaDag18()">18</div>
+                <div class="ruta animated dag19" onclick="öppnaDag19()">19</div>
+                <div class="ruta animated dag20" onclick="öppnaDag20()">20</div>
+                <div class="ruta animated dag21" onclick="öppnaDag21()">21</div>
+                <div class="ruta animated dag22" onclick="öppnaDag22()">22</div>
+                <div class="ruta animated dag23" onclick="öppnaDag23()">23</div>
+                <div class="ruta animated dag24" onclick="öppnaDag24()">24</div>
+                <div class="ruta animated dag25" onclick="öppnaDag25()">25</div>
+                <div class="ruta animated dag26" onclick="öppnaDag26()">26</div>
+                <div class="ruta animated dag27" onclick="öppnaDag27()">27</div>
+                <div class="ruta animated dag28" onclick="öppnaDag28()">28</div>
+                <div class="ruta animated dag29" onclick="öppnaDag29()">29</div>
+                <div class="ruta animated dag30" onclick="öppnaDag30()">30</div>
+                <div class="ruta animated dag31" onclick="öppnaDag31()">31</div>
+             
+            </div>
+        </div>
+    </div>
+    <script>
+    /* Element vi arbetar med */
+    const elementDag1 = document.querySelector(".dag1");
+    const elementDag2 = document.querySelector(".dag2");
+    const elementDag3 = document.querySelector(".dag3");
+
+    function öppnaDag1() {
+        //elementDag1.classList.toggle("fadeOut");
+        elementDag1.classList.toggle("fadeOut");
+
+        /* vänta 5 s */
+        setTimeout(function () {
+        elementDag1.classList.toggle("snowman1");
+        }, 2000);
+    }
+
+    function öppnaDag2() {
+        elementDag2.classList.toggle("rotateOut");
+
+        /* vänta 2s för att köra nästa steg*/
+        setTimeout(function () {
+        elementDag2.classList.toggle("snowmanText");
+        elementDag2.innerHTML = "Don't cry, snowman, not in front of me";
+
+        }, 2000);
+    }
+    function öppnaDag3() {
+        elementDag3.
+        
+    }
+    </script>
+</body>
+</html>

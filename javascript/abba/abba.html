@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="abba.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>The Winner takes It All</h1>
+        <p></p>
+        <button onclick="stylaRubrik()">Styla Rubriken</button>
+        <button onclick="stylaText()">Styla texten</button>
+        <button onclick="blinkaBox()">Blinka boxen</button>
+    </div>
+    <script>
+    /* element vi arbtetar med */
+    const elementH1 = document.querySelector("h1");
+    const elementP = document.querySelector("p");
+    const elementBox = document.querySelector(".kontainer");
+
+    function stylaRubrik() {
+        elementH1.style.color = "red";
+        
+    }
+    function stylaText() {
+        var textFärg = prompt("Välj en färg");
+        elementP.style.color = textFärg;
+        
+    }
+    function blinkaBox() {
+        elementP.style.display = "none";
+        elementBox.classList.toggle("blink");
+
+        setInterval(blinkTillBaka, 1000);
+        
+    }
+    function blinkTillBaka() {
+        elementBox.classList.toggle("blink");
+        
+    }
+    </script>
+</body>
+</html>
