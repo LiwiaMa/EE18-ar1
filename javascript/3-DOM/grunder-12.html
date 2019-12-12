@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+
+        <button onclick="visaLozcstz()">Don't you dare!</button>
+    </div>
+    <script>
+        const elementBox = document.querySelector("div");
+        /* Element vi skall arbeta med */
+        function visaLozcstz() {
+            elementBox.innerHTML = "<h1>well... suit yourself!<h1>" +
+                                    "<img src=\./foton/giphy.gif\ alt=\cat\>";
+        }
+    </script>
+</body>
+</html>
+
