@@ -13,16 +13,19 @@
         <h1>När då då?</h1>
 
         <h3>Frågan</h3>
-        <textarea cols="30" rows="10">När delas diamantbollen ut till den första kvinnliga fotbollspelaren</textarea>
+        <textarea cols="30" rows="10"></textarea>
 
         <label>Gissa årtalet</label>
-        <input type="text">
-        <button>Skicka</button>
+        <input id="årtal" type="text">
+        <button id="skicka">Skicka</button>
+
+        <label>Poäng</label>
+        <input id="poäng" type="text" readonly>
 
         <h3>Svar</h3>
-        <i class="fa fa-thumbs-up "></i>
-        <i class="fa fa-thumbs-down "></i>
-        <button>Nästa fråga >></button>
+        <i id="upp" class="fa fa-thumbs-up "></i>
+        <i id="ned" class="fa fa-thumbs-down "></i>
+        <button id="nästa">Nästa fråga >></button>
     </div>
     <script defer src="./spel.js"></script>
 </body>
