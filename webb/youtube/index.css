@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-  font-family: 'Monsterrat', sans-serif;
+    font-family: 'Monsterrat', sans-serif;
 }
 
 p, blockquote {
@@ -18,7 +18,7 @@ ul {
 
 .container {
     text-align: center;
-    padding: .8em 1.2em  ;
+    padding: .8em 1.2em;
 }
 
 .logo {
@@ -59,7 +59,7 @@ h1, .suphead {
     color: #FFF;
     margin-top: 15%;
     padding: 4em 0 2em;
-    border-top-left-radius:40px ;
+    border-top-left-radius: 40px;
     transform: skewY(-2deg);
 }
 
@@ -85,7 +85,7 @@ h1, .suphead {
     z-index: -1;
 }
 
-.blue-container ul{
+.blue-container ul {
     transform: skewY(2deg);
 }
 
@@ -107,7 +107,7 @@ h1, .suphead {
 
 .gray-container {
     background: #F6F6F6;
-    padding: 4em 0 2em ;
+    padding: 4em 0 2em;
     margin-top: -3%;
 }
 
@@ -198,7 +198,7 @@ nav ul {
     top: 0;
     right: 0;
     text-align: left;
-    background: rgb(36,41,44);
+    background: rgb(36, 41, 44);
     height: 100%;
     z-index: 7;
     padding-top: 3em;
@@ -210,11 +210,11 @@ nav ul li a {
     display: block;
     width: 100%;
     padding: 1em 2em;
-    background-color: rgb(36,55,59);
+    background-color: rgb(36, 55, 59);
 }
 
 nav ul li a {
-    background-color: rgb(65,73,78);
+    background-color: rgb(65, 73, 78);
 }
 
 .exit-btn {
@@ -228,7 +228,7 @@ nav ul li a {
     cursor: pointer;
 }
 
- @media only screen and (min-width: 650px) {
+@media only screen and (min-width: 650px) {
 
     .server {
         width: 50%;
@@ -274,15 +274,15 @@ nav ul li a {
     .gray-container ul {
         display: flex;
     }
-     
+
     nav ul {
         width: 40%;
     }
- }
+}
 
- @media only screen and (min-width: 875px) {
+@media only screen and (min-width: 875px) {
 
-    .subhead { 
+    .subhead {
         margin-bottom: 15%;
     }
 
@@ -293,11 +293,10 @@ nav ul li a {
     .gray-container ul {
         margin: 4% 0 0;
     }
- }
+}
 
- @media only screen and (min-width: 1024px) {¨
-
-    .cta {
+@media only screen and (min-width: 1024px) {
+    ¨ .cta {
         width: 50%;
     }
 
@@ -359,7 +358,7 @@ nav ul li a {
     .server {
         width: 40%;
         margin: 5em auto 4em 15%;
-     }
+    }
 
     .container {
         width: 70%;
