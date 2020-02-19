@@ -1,0 +1,25 @@
+body {
+    background-image: url(../bilder/hotell2.jpg);
+    background-size: 1600px;
+    background-attachment: fixed;
+}
+.kontainer {
+    width: 500px;
+    padding: 2em;
+    margin: 3em auto;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 12px #f0e9d1;
+}
+
+.kontainer fieldset {
+    border: 3px solid grey;
+    border-radius: 7px;
+    padding: 0 0 10px 20px;
+}
+
+.kontainer legend, .kontainer select, .kontainer input {
+    /* vi måste korta ner legend för att sträcket runt boxen ska gå hela vägen runt */
+    width: auto;
+}

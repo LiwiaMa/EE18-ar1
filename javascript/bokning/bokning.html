@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotellbokning</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bokning.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Rumsbokning</h1>
+        <!-- För att göra en liten gruppering inom formulär -->
+        <fieldset>
+            <legend>Val av rum</legend><!-- rubrik sitter ihop med field -->
+            <!-- om man namnger alla 'rum' så har man tre olika val av rum, man kan bara välja ett alternativ -->
+            <input type="radio" name="rum" id="erum" checked value="300"> <!-- rund - checkbox men rund. bara välja en --> <!-- label text för svar -->
+            <label for="erum">Enkelrum 300 kr</label> <br>
+            <input type="radio" name="rum" id="drum" value="600">
+            <label for="drum">Dubbelrum 600 kr</label> <br>
+            <input type="radio" name="rum" id="frum" value="900"> 
+            <label for="frum">Familjerum 900 kr</label>
+        </fieldset>
+
+        <fieldset> <!-- box i en formulär -->
+            <legend>Antal nätter</legend>
+            <select class="form-control form-control-sm">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">1 vecka</option>
+            </select>
+            
+        </fieldset>
+
+        <fieldset> <!-- "ruta" med fler element. förmulär --> <!-- type=text är ruta man skriver i. type=checkbox är rutor som man kan ha i kryssade fler på en gång. type=radio är runda checkboxar och man kan bara ha i kryssat en -->
+            <legend>Tillägg</legend> <!-- checked -- var från början -->
+            <input type="checkbox" name="tillägg" id="frukost" checked value="100">
+            <label for="frukost">Frukost 100 kr/dag</label> <br>
+            <input type="checkbox" name="tillägg" id="wifi" value="40">
+            <label for="wifi">Snabb Wi-Fi 40 kr</label> <br>
+            <input type="checkbox" name="tillägg" id="snacks" value="50"> 
+            <label for="snacks">Snacks på rummet 50 kr</label> <br>
+            Kostnader per dygn.
+        </fieldset>
+        <fieldset>
+            <legend>Kampanjkod</legend>
+            Om du har en kampanjkod, mata in den här. <br>
+            <input class="form-control" type="text" id="kampanjkod">
+        </fieldset>
+        <fieldset>
+            <legend>Totalpris</legend>
+            <p>Dina val ger en kostnad på 0 kr.</p>
+            <button class="btn btn-outline-info">Beräkna kostnad</button>
+        </fieldset>
+    </div>
+
+    <script defer src="./bokning.js"></script>
+    <!-- defer för att js ska ladda sist, efter html -->
+</body>
+</html>
