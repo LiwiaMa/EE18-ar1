@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        /* Element vi jobbar med */
+        const eCanvas = document.querySelector("canvas");
+
+        /* Ställ in bredd och höjd på canvas */
+        eCanvas.width = 800;
+        eCanvas.height = 600;
+
+        /* Aktivera ritmotorn */ /* getcontext är bara för att det ska funka */
+        var ctx = eCanvas.getContext("2d");
+
+        /* Rita en rektangel */
+        ctx.fillRect(100, 100, 200, 200);
+
+        /* Rita en färgad rektangel */
+        ctx.fillStyle = "darkblue";
+        ctx.fillRect(100, 400, 200, 100);
+
+        /* En till rektangel */
+        ctx.fillStyle = "orange";
+        ctx.fillRect(100, 500, 200, 100);
+
+        /* Rita rutmönser */
+        ctx.fillStyle = "red";
+        ctx.fillRect(400, 100, 50, 50);
+        ctx.fillStyle = "green";
+        ctx.fillRect(450, 100, 50, 50);
+        ctx.fillStyle = "red";
+        ctx.fillRect(500, 100, 50, 50);
+        ctx.fillStyle = "green";
+        ctx.fillRect(400, 150, 50, 50);
+        ctx.fillStyle = "red";
+        ctx.fillRect(450, 150, 50, 50);
+        ctx.fillStyle = "red";
+        ctx.fillRect(450, 150, 50, 50);
+        ctx.fillStyle = "green";
+        ctx.fillRect(500, 150, 50, 50);
+
+        /* Svenska flaggan */
+        ctx.fillStyle = "blue";
+        ctx.fillRect(400, 300, 200, 100);
+        ctx.fillStyle = "yellow";
+        ctx.fillRect(400, 345, 200, 20);
+        ctx.fillStyle = "yellow";
+        ctx.fillRect(450, 300, 20, 100);
+
+        /* Rita en linje */
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineWidth = 5;
+        ctx.lineTo(400, 300); /* rita från ena till andra punkt i px */
+         ctx.lineTo(500, 300);
+         ctx.lineTo(600, 200);
+         ctx.lineTo(600, 0);
+         ctx.strokeStyle = "darkorange";
+        ctx.stroke(); /* som end path --> att den e slut */
+
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(300, 600);
+        ctx.strokeStyle = "lightgreen";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(0,0);
+        ctx.lineTo(200, 600);
+        ctx.lineTo(300, 0);
+        ctx.strokeStyle = "purple";
+        ctx.stroke();
+    </script>
+</body>
+</html>

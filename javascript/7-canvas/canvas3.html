@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        /* Element vi jobbar med */
+        const eCanvas = document.querySelector("canvas");
+
+        /* Ställ in bredd och höjd på canvas */
+        eCanvas.width = 800;
+        eCanvas.height = 600;
+
+        /* Aktivera ritmotorn */
+        /* getcontext är bara för att det ska funka */
+        var ctx = eCanvas.getContext("2d");
+
+
+        /* Rita en cirkel */
+        ctx.beginPath();
+        ctx.lineWidth = 1;
+        ctx.arc(400, 150, 50, 0, 2 * Math.PI);
+
+        ctx.moveTo(100, 500);
+        ctx.lineTo(100, 100);
+        ctx.lineTo(500, 100);
+        ctx.moveTo(600, 100);
+        ctx.moveTo(600, 150);
+        ctx.moveTo(600, 250);
+        ctx.moveTo(600, 450);
+        ctx.moveTo(600, 450);
+
+        /* Kropp */
+        ctx.moveTo(400, 200);
+        ctx.lineTo(400, 350);
+
+        /* Höger hand */
+        ctx.moveTo(450, 250);
+        ctx.lineTo(400, 210 );
+
+        /* Höger ben */
+        ctx.moveTo(450, 400);
+        ctx.lineTo(400, 350 );
+
+        /* Vänster hand */
+        ctx.moveTo(350, 250);
+        ctx.lineTo(400, 210 );
+
+        /* Vänster ben */
+        ctx.moveTo(350, 400);
+        ctx.lineTo(400, 350 );
+
+        ctx.stroke();
+    </script>
+</body>
+</html>
