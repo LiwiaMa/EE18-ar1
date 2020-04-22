@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./pikachu.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        /* ****************************** */
+        /*        Ställ in canvas         */
+        /* ****************************** */
+        const eCanvas = document.querySelector("canvas");
+        eCanvas.width = 1200;
+        eCanvas.height = 1000;
+        var ctx = eCanvas.getContext("2d");
+
+        /* ****************************** */
+        /*     Variabler och Objekt            */
+        /* ****************************** */
+        var figurX = Math.random() * 1200; //startvärden, var animationen börjar
+        var figurY = 0;
+
+        /* brave figuren */
+        var brave = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        
+        var kermit = { 
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        var popeye = { 
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+
+        /* Ladda in bilderna */
+        brave.bild.src = "./Favorites/icons8-brave-50.png";
+        kermit.bild.src = "./Favorites/icons8-kermit-the-frog-50.png";
+        popeye.bild.src = "./Favorites/icons8-popeye-50.png";
+
+        /* ****************************** */
+        /*            Funktioner          */
+        /* ****************************** */
+        
+       function ritaBrave() {
+           ctx.drawImage(brave.bild, brave.x, brave.y);
+       }
+       function ritaKermit() {
+           ctx.drawImage(kermit.bild, kermit.x, kermit.y);
+       }
+       function ritaPopeye() {
+           ctx.drawImage(popeye.bild, popeye.x, popeye.y);
+       }
+
+        /* Animationsloopen */
+        function loopen() {
+            /* sudda ut canvas */
+            ctx.clearRect(0, 0, 1200, 1000);
+            /* Ökar värdet på x */
+           
+            brave.y += 3;
+            ritaBrave();
+
+            kermit.y += 3;
+            ritaKermit();
+
+            popeye.y += 3;
+            ritaPopeye();
+
+            requestAnimationFrame(loopen);
+        }
+
+        
+        /* ****************************** */
+        /*     Starta animationsloopen    */
+        /* ****************************** */
+        loopen();
+    </script>
+</body>
+</html>
