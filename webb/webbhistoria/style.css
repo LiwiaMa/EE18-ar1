@@ -19,24 +19,35 @@ h1 {
   margin: auto 650px; 
   font-size: 45px;
 }
+ul {
+    font-family: 'Saira Stencil One', cursive; color: aliceblue;
+}
+
 
 
 .vänster {
-background-color: #198a90d5;
+background-color: #90198ed5;
 width: 900px;
 margin: 30px auto;
 padding: 50px;
 border-radius: 18px;
 }
 .mitten {
-    background-color: #64b125d5;
+    background-color: #b12593d5;
     width: 900px;
     margin: 0 auto;
     padding: 50px;
     border-radius: 18px;
 }
 .höger {
-background-color: #f5741ec4;
+background-color: #d14eeec4;
+width: 900px;
+margin: 30px auto;
+padding: 50px;
+border-radius: 18px;
+}
+.teknik {
+background-color: #ee1ef5c4;
 width: 900px;
 margin: 30px auto;
 padding: 50px;
