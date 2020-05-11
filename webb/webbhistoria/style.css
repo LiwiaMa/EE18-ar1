@@ -14,3 +14,31 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+h1 {
+  margin: auto 650px; 
+  font-size: 45px;
+}
+
+
+.vänster {
+background-color: #198a90d5;
+width: 900px;
+margin: 30px auto;
+padding: 50px;
+border-radius: 18px;
+}
+.mitten {
+    background-color: #64b125d5;
+    width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 18px;
+}
+.höger {
+background-color: #f5741ec4;
+width: 900px;
+margin: 30px auto;
+padding: 50px;
+border-radius: 18px;
+}
