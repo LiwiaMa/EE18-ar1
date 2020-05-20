@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+.old1 {
+    background-image: url("./bilder/bg4.jpg");
+}
+.woman1 {
+    background-image: url("./bilder/bg3.jpg");
+}
+.man1 {
+    background-image: url("./bilder/man1.jpg");
+}
+.society1 {
+    background-image: url("./bilder/bg6.jpg");
+}
+.music1 {
+    background-image: url("./bilder/music3.jpg");
+}
+.changes1 {
+   background-image: url("./bilder/bg7.jpg");
+}
+/*  Div på varja sida */
+.old1 .kontainer {
+    width: 1000px;
+    padding: 25px 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgb(208, 136, 60);
+}
+.woman1 .kontainer {
+    width: 1000px;
+    padding: 25px 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgb(208, 136, 60);
+}
+.man1 .kontainer {
+    width: 1000px;
+    padding: 25px 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgb(7, 38, 240);
+}
+.music1 .kontainer {
+    width: 1000px;
+    padding: 25px 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgb(235, 20, 20);
+}
+.society1 .kontainer {
+    width: 1000px;
+    padding: 25px 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgb(20, 232, 235);
+}
+.changes1 .kontainer {
+    width: 1000px;
+    padding: 25px 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgb(96, 231, 146);
+}
+/* Text */
+h1 {
+    background-color: rgb(255, 255, 255);
+    margin: 10px 300px 30px 300px;
+    font-size: 40px;
+    font-family: 'Caveat', cursive;
+}
+h2{
+    margin: 20px 350px 30px 400px;
+    font-size: 35px;
+    font-family: 'Caveat', cursive;
+}
+p {
+    background-color: rgb(255, 255, 255);
+    
+}
+.introduction {
+    font-size: 23px;
+    font-family: 'Caveat', cursive;
+}
+.text {
+    font-size: 22px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+/* Meny */
+.img-holder {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.836);
+    box-shadow: 0 0 30px rgb(221, 216, 193);
+    padding: 50px 11px;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+img {
+    height: auto;
+    width: 100%;
+   
+}
+.img-holder figure{
+    background: #FFF;
+    padding: 7px;
+    widows: 600px;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.img-holder figure figcaption{
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-size: 20px;
+
+}
+.start{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(201, 209, 46); 
+}
+.woman{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(209, 152, 46); 
+}
+.man {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(46, 155, 209); 
+}
+.music {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(209, 84, 46); 
+}
+.society {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(46, 209, 157); 
+}
+.changes {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(73, 209, 46); 
+}
