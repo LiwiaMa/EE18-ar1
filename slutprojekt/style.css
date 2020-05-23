@@ -16,6 +16,9 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 .old1 {
     background-image: url("./bilder/bg4.jpg");
 }
+.old1Dark {
+    background-image: url("./bilder/bg10.jpg");
+}
 .woman1 {
     background-image: url("./bilder/bg3.jpg");
 }
@@ -39,6 +42,15 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     border-radius: 7px;
     margin: 0 auto;
     box-shadow: 0 0 30px rgb(208, 136, 60);
+}
+.old1Dark .kontainer {
+    width: 1000px;
+    padding: 25px 50px;
+    background-color: black;
+    border-radius: 7px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgb(208, 136, 60);
+
 }
 .woman1 .kontainer {
     width: 1000px;
@@ -83,9 +95,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 /* Text */
 h1 {
     background-color: rgb(255, 255, 255);
-    margin: 10px 300px 30px 300px;
+    margin: 10px 50px 30px 50px;
     font-size: 40px;
     font-family: 'Caveat', cursive;
+    text-align: center ;
 }
 h2{
     margin: 20px 350px 30px 400px;
@@ -96,9 +109,28 @@ p {
     background-color: rgb(255, 255, 255);
     
 }
+.ml3 {
+    font-weight: 900;
+    font-size: 3.5em;
+    background-color: white;
+    color: black;
+  }
+.ml3Dark {
+    font-weight: 900;
+    font-size: 3.5em;
+    background: #000;
+    color: white;
+  }
 .introduction {
     font-size: 23px;
     font-family: 'Caveat', cursive;
+    background-color: white;
+}
+.introductionDark {
+    font-size: 23px;
+    font-family: 'Caveat', cursive;
+    background-color: black; 
+    color: white;
 }
 .text {
     font-size: 22px;
