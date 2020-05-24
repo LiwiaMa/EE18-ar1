@@ -4,13 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>100 yers of fashion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <body class="music1">
     <div class="kontainer">
-        <u>
-            <h1>Music style</h1>
-        </u>
+        <button class="btn btn-outline-danger" id="mode">Dark</button>
+        <h1 class="ml7">
+            <span class="text-wrapper">
+                <span class="letters">Music style</span>
+            </span>
+        </h1>
+
         <p class="introduction">Fashion changes really quicly. At this site you will get to know better how both clothing- and musicstyle has changed over past 100 years, what affection it had at our society, and how it still does change</p>
 
         <div class="wrapper">
@@ -45,7 +51,73 @@
                 </figure>
             </div>
         </div>
-
     </div>
+    <script>
+        var textWrapper = document.querySelector('.ml7 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({
+                loop: true
+            })
+            .add({
+                targets: '.ml7 .letter',
+                translateY: ["1.1em", 0],
+                translateX: ["0.55em", 0],
+                translateZ: 0,
+                rotateZ: [180, 0],
+                duration: 750,
+                easing: "easeOutExpo",
+                delay: (el, i) => 50 * i
+            }).add({
+                targets: '.ml7',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+
+        document.getElementById("mode").addEventListener("click", changeMode);
+
+        /* min funktion för changing */
+        function changeMode() {
+            var button = document.getElementById("mode");
+
+            let modeElems = document.getElementsByClassName("music1");
+            if (modeElems.length == 0) {
+                modeElems = document.getElementsByClassName("music1Dark");
+                if (modeElems.length !== 0) {
+                    modeElems[0].className = "music1";
+                }
+                button.innerHTML = "Dark";
+            } else {
+                modeElems[0].className = "music1Dark";
+                button.innerHTML = "Light";
+            }
+
+            let modeClass = "introduction";
+            modeElems = document.getElementsByClassName("introduction");
+            if (modeElems.length == 0) {
+                modeElems = document.getElementsByClassName("introductionDark");
+            } else {
+                modeClass = "introductionDark";
+            }
+
+            /* loop */
+            const n = modeElems.length;
+            for (let i = 0; i < n; i++) {
+                modeElems[0].className = modeClass;
+            }
+
+            modeElems = document.getElementsByClassName("ml7");
+            if (modeElems.length == 0) {
+                modeElems = document.getElementsByClassName("ml7Dark");
+                if (modeElems.length !== 0) {
+                    modeElems[0].className = "ml7";
+                }
+            } else {
+                modeElems[0].className = "ml7Dark";
+            }
+        }
+    </script>
 </body>
 </html>

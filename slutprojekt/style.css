@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
 
@@ -22,17 +21,32 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 .woman1 {
     background-image: url("./bilder/bg3.jpg");
 }
+.woman1Dark {
+    background-image: url("./bilder/woman1.jpg");
+}
 .man1 {
     background-image: url("./bilder/man1.jpg");
+}
+.man1Dark {
+    background-image: url("./bilder/man3.jpg");
 }
 .society1 {
     background-image: url("./bilder/bg6.jpg");
 }
+.society1Dark {
+    background-image: url("./bilder/5.jpg");
+}
 .music1 {
     background-image: url("./bilder/music3.jpg");
 }
+.music1Dark {
+    background-image: url("./bilder/music5.jpg");
+}
 .changes1 {
-   background-image: url("./bilder/bg7.jpg");
+    background-image: url("./bilder/bg7.jpg");
+}
+.changes1Dark {
+    background-image: url("./bilder/2.jpg");
 }
 /*  Div på varja sida */
 .old1 .kontainer {
@@ -60,10 +74,26 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0 auto;
     box-shadow: 0 0 30px rgb(208, 136, 60);
 }
+.woman1Dark .kontainer {
+    width: 1000px;
+    padding: 25px 50px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 7px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgb(208, 136, 60);
+}
 .man1 .kontainer {
     width: 1000px;
     padding: 25px 50px;
     background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgb(7, 38, 240);
+}
+.man1Dark .kontainer {
+    width: 1000px;
+    padding: 25px 50px;
+    background-color: rgb(0, 0, 0);
     border-radius: 7px;
     margin: 0 auto;
     box-shadow: 0 0 30px rgb(7, 38, 240);
@@ -76,10 +106,26 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0 auto;
     box-shadow: 0 0 30px rgb(235, 20, 20);
 }
+.music1Dark .kontainer {
+    width: 1000px;
+    padding: 25px 50px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 7px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgb(235, 20, 20);
+}
 .society1 .kontainer {
     width: 1000px;
     padding: 25px 50px;
     background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgb(20, 232, 235);
+}
+.society1Dark .kontainer {
+    width: 1000px;
+    padding: 25px 50px;
+    background-color: rgb(0, 0, 0);
     border-radius: 7px;
     margin: 0 auto;
     box-shadow: 0 0 30px rgb(20, 232, 235);
@@ -92,35 +138,189 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0 auto;
     box-shadow: 0 0 30px rgb(96, 231, 146);
 }
+.changes1Dark .kontainer {
+    width: 1000px;
+    padding: 25px 50px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 7px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgb(96, 231, 146);
+}
 /* Text */
 h1 {
     background-color: rgb(255, 255, 255);
     margin: 10px 50px 30px 50px;
     font-size: 40px;
     font-family: 'Caveat', cursive;
-    text-align: center ;
+    text-align: center;
 }
-h2{
-    margin: 20px 350px 30px 400px;
+.year {
+    text-align: center;
     font-size: 35px;
     font-family: 'Caveat', cursive;
+    color: black;
+    background-color: white;
 }
-p {
-    background-color: rgb(255, 255, 255);
-    
+.yearDark {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Caveat', cursive;
+    color: white;
+    background-color: black;
 }
+/* rubrik i js */
+
+/* old, changes */
 .ml3 {
     font-weight: 900;
     font-size: 3.5em;
     background-color: white;
     color: black;
-  }
+}
 .ml3Dark {
     font-weight: 900;
     font-size: 3.5em;
     background: #000;
+  color: white;
+}
+/* Woman Fashion */
+.ml2 {
+    font-weight: 900;
+    font-size: 3.5em;
+    color: black;
+    background-color: white;
+}
+.ml2Dark {
+    font-weight: 900;
+    font-size: 3.5em;
     color: white;
+    background-color: black;
+}
+.ml2Dark .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+/* man fashion */
+.ml12 {
+    font-weight: 200;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color: black;
+    background-color: #fff;
+}
+.ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+.ml12Dark .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+.ml12Dark {
+    font-weight: 200;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color: white;
+    background-color: black;
+}
+/*  music */
+.ml7 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.7em;
+    color: #000;
+    background-color: #fff;
   }
+  .ml7 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  .ml7 .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+    line-height: 1em;
+  }
+.ml7Dark {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.7em;
+    color: #FFF;
+    background-color: #000;
+  }
+  .ml7Dark .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  .ml7Dark .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  /* society */
+  .ml9 {
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+    color: #000;
+    background-color: #fff;
+  }
+  
+  .ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml9 .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+  }
+  .ml9Dark {
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+    color: #fff;
+    background-color: #000;
+  }
+  
+  .ml9Dark .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml9Dark .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+  }
+  
+/* understrucket */
+.line {
+    color: black;
+}
+.lineDark {
+    color: white;
+}
+/* text */
 .introduction {
     font-size: 23px;
     font-family: 'Caveat', cursive;
@@ -129,18 +329,26 @@ p {
 .introductionDark {
     font-size: 23px;
     font-family: 'Caveat', cursive;
-    background-color: black; 
+    background-color: black;
     color: white;
 }
 .text {
     font-size: 22px;
     font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    background-color: white;
+}
+.textDark {
+    font-size: 22px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 .wrapper {
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    
+
 }
 /* Meny */
 .img-holder {
@@ -160,9 +368,9 @@ p {
 img {
     height: auto;
     width: 100%;
-   
+
 }
-.img-holder figure{
+.img-holder figure {
     background: #FFF;
     padding: 7px;
     widows: 600px;
@@ -170,39 +378,39 @@ img {
     margin: 10px auto;
 }
 
-.img-holder figure figcaption{
+.img-holder figure figcaption {
     font-family: 'Caveat', cursive;
     text-align: center;
     font-size: 20px;
 
 }
-.start{
+.start {
     text-decoration: none;
     font-weight: bold;
-    color: rgb(201, 209, 46); 
+    color: rgb(201, 209, 46);
 }
-.woman{
+.woman {
     text-decoration: none;
     font-weight: bold;
-    color: rgb(209, 152, 46); 
+    color: rgb(209, 152, 46);
 }
 .man {
     text-decoration: none;
     font-weight: bold;
-    color: rgb(46, 155, 209); 
+    color: rgb(46, 155, 209);
 }
 .music {
     text-decoration: none;
     font-weight: bold;
-    color: rgb(209, 84, 46); 
+    color: rgb(209, 84, 46);
 }
 .society {
     text-decoration: none;
     font-weight: bold;
-    color: rgb(46, 209, 157); 
+    color: rgb(46, 209, 157);
 }
 .changes {
     text-decoration: none;
     font-weight: bold;
-    color: rgb(73, 209, 46); 
+    color: rgb(73, 209, 46);
 }

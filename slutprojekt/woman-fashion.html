@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Woman fashion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <body class="woman1">
     <div class="kontainer">
-        <u>
-            <h1>Woman fashion</h1>
-        </u>
+        <button class="bredd3 btn btn-outline-warning" id="mode">Dark</button>
+        <h1 class="ml2">Woman fashion</h1>
         <p class="introduction">As we told before, faashion changes really fast. Fashion had been with us for decades, changing as the times change. Men and women alike are influenced by fashion. However more women were more influenced than men as early as our history projects. Let's see how the fashion has changed the last 100 years.</p>
 
         <div class="wrapper">
@@ -45,9 +46,108 @@
                 </figure>
             </div>
         </div>
-        <u><h2>1920</h2></u>
+        <u class="line">
+            <h2 class="year">1920</h2>
+        </u>
         <p class="text"> kjdskjdskj</p>
 
     </div>
 </body>
+<script>
+    var textWrapper = document.querySelector('.ml2');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({
+            loop: true
+        })
+        .add({
+            targets: '.ml2 .letter',
+            scale: [4, 1],
+            opacity: [0, 1],
+            translateZ: 0,
+            easing: "easeOutExpo",
+            duration: 950,
+            delay: (el, i) => 70 * i
+        }).add({
+            targets: '.ml2',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+
+    document.getElementById("mode").addEventListener("click", changeMode);
+
+
+    /* min funktion för changing */
+    function changeMode() {
+        var button = document.getElementById("mode");
+
+        let modeElems = document.getElementsByClassName("woman1");
+        if (modeElems.length == 0) {
+            modeElems = document.getElementsByClassName("woman1Dark");
+            if (modeElems.length !== 0) {
+                modeElems[0].className = "woman1";
+            }
+            button.innerHTML = "Dark";
+        } else {
+            modeElems[0].className = "woman1Dark";
+            button.innerHTML = "Light";
+        }
+
+        let modeClass = "introduction";
+        modeElems = document.getElementsByClassName("introduction");
+        if (modeElems.length == 0) {
+            modeElems = document.getElementsByClassName("introductionDark");
+        } else {
+            modeClass = "introductionDark";
+        }
+
+        /* loop */
+        const n = modeElems.length;
+        for (let i = 0; i < n; i++) {
+            modeElems[0].className = modeClass;
+        }
+
+        modeElems = document.getElementsByClassName("ml2");
+        if (modeElems.length == 0) {
+            modeElems = document.getElementsByClassName("ml2Dark");
+            if (modeElems.length !== 0) {
+                modeElems[0].className = "ml2";
+            }
+        } else {
+            modeElems[0].className = "ml2Dark";
+        }
+
+        modeElems = document.getElementsByClassName("year");
+        if (modeElems.length == 0) {
+            modeElems = document.getElementsByClassName("yearDark");
+            if (modeElems.length !== 0) {
+                modeElems[0].className = "year";
+            }
+        } else {
+            modeElems[0].className = "yearDark";
+        }
+
+        modeElems = document.getElementsByClassName("text");
+        if (modeElems.length == 0) {
+            modeElems = document.getElementsByClassName("textDark");
+            if (modeElems.length !== 0) {
+                modeElems[0].className = "text";
+            }
+        } else {
+            modeElems[0].className = "textDark";
+        }
+
+        modeElems = document.getElementsByClassName("line");
+        if (modeElems.length == 0) {
+            modeElems = document.getElementsByClassName("lineDark");
+            if (modeElems.length !== 0) {
+                modeElems[0].className = "line";
+            }
+        } else {
+            modeElems[0].className = "lineDark";
+        }
+    }
+</script>
 </html>
