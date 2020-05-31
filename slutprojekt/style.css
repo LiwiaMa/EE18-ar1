@@ -12,23 +12,44 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
 }
+@media(max-width:780px) {
+    .kontainer {
+        width: 70%;
+    }
+}
+
+.search {
+    margin: auto 700px;
+}
+.search1 {
+    margin: auto 450px;
+}
+.ul-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-direction: row;
+}
+.fashion {
+    width: 200px;
+}
 .old1 {
     background-image: url("./bilder/bg4.jpg");
 }
 .old1Dark {
-    background-image: url("./bilder/bg10.jpg");
+    background-image: url("./bilder/6.jpg");
 }
 .woman1 {
     background-image: url("./bilder/bg3.jpg");
 }
 .woman1Dark {
-    background-image: url("./bilder/woman1.jpg");
+    background-image: url("./bilder/woman2.jpg");
 }
 .man1 {
     background-image: url("./bilder/man1.jpg");
 }
 .man1Dark {
-    background-image: url("./bilder/man3.jpg");
+    background-image: url("./bilder/man4.jpg");
 }
 .society1 {
     background-image: url("./bilder/bg6.jpg");
@@ -46,11 +67,12 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     background-image: url("./bilder/bg7.jpg");
 }
 .changes1Dark {
-    background-image: url("./bilder/2.jpg");
+    background-image: url("./bilder/bg10.jpg");
 }
 /*  Div på varja sida */
 .old1 .kontainer {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     padding: 25px 50px;
     background-color: rgb(255, 255, 255);
     border-radius: 7px;
@@ -58,7 +80,8 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     box-shadow: 0 0 30px rgb(208, 136, 60);
 }
 .old1Dark .kontainer {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     padding: 25px 50px;
     background-color: black;
     border-radius: 7px;
@@ -67,7 +90,8 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 
 }
 .woman1 .kontainer {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     padding: 25px 50px;
     background-color: rgb(255, 255, 255);
     border-radius: 7px;
@@ -75,7 +99,8 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     box-shadow: 0 0 30px rgb(208, 136, 60);
 }
 .woman1Dark .kontainer {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     padding: 25px 50px;
     background-color: rgb(0, 0, 0);
     border-radius: 7px;
@@ -83,7 +108,8 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     box-shadow: 0 0 30px rgb(208, 136, 60);
 }
 .man1 .kontainer {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     padding: 25px 50px;
     background-color: rgb(255, 255, 255);
     border-radius: 7px;
@@ -91,7 +117,8 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     box-shadow: 0 0 30px rgb(7, 38, 240);
 }
 .man1Dark .kontainer {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     padding: 25px 50px;
     background-color: rgb(0, 0, 0);
     border-radius: 7px;
@@ -99,7 +126,8 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     box-shadow: 0 0 30px rgb(7, 38, 240);
 }
 .music1 .kontainer {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     padding: 25px 50px;
     background-color: rgb(255, 255, 255);
     border-radius: 7px;
@@ -107,7 +135,8 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     box-shadow: 0 0 30px rgb(235, 20, 20);
 }
 .music1Dark .kontainer {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     padding: 25px 50px;
     background-color: rgb(0, 0, 0);
     border-radius: 7px;
@@ -115,7 +144,8 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     box-shadow: 0 0 30px rgb(235, 20, 20);
 }
 .society1 .kontainer {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     padding: 25px 50px;
     background-color: rgb(255, 255, 255);
     border-radius: 7px;
@@ -123,7 +153,8 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     box-shadow: 0 0 30px rgb(20, 232, 235);
 }
 .society1Dark .kontainer {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     padding: 25px 50px;
     background-color: rgb(0, 0, 0);
     border-radius: 7px;
@@ -131,7 +162,8 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     box-shadow: 0 0 30px rgb(20, 232, 235);
 }
 .changes1 .kontainer {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     padding: 25px 50px;
     background-color: rgb(255, 255, 255);
     border-radius: 7px;
@@ -139,7 +171,9 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     box-shadow: 0 0 30px rgb(96, 231, 146);
 }
 .changes1Dark .kontainer {
-    width: 1000px;
+    width: 100%;
+
+    max-width: 1000px;
     padding: 25px 50px;
     background-color: rgb(0, 0, 0);
     border-radius: 7px;
@@ -160,6 +194,8 @@ h1 {
     font-family: 'Caveat', cursive;
     color: black;
     background-color: white;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 .yearDark {
     text-align: center;
@@ -167,7 +203,10 @@ h1 {
     font-family: 'Caveat', cursive;
     color: white;
     background-color: black;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
+
 /* rubrik i js */
 
 /* old, changes */
@@ -181,7 +220,7 @@ h1 {
     font-weight: 900;
     font-size: 3.5em;
     background: #000;
-  color: white;
+    color: white;
 }
 /* Woman Fashion */
 .ml2 {
@@ -232,87 +271,87 @@ h1 {
     font-size: 3.7em;
     color: #000;
     background-color: #fff;
-  }
-  .ml7 .text-wrapper {
+}
+.ml7 .text-wrapper {
     position: relative;
     display: inline-block;
     padding-top: 0.2em;
     padding-right: 0.05em;
     padding-bottom: 0.1em;
     overflow: hidden;
-  }
-  .ml7 .letter {
+}
+.ml7 .letter {
     transform-origin: 0 100%;
     display: inline-block;
     line-height: 1em;
-  }
+}
 .ml7Dark {
     position: relative;
     font-weight: 900;
     font-size: 3.7em;
     color: #FFF;
     background-color: #000;
-  }
-  .ml7Dark .text-wrapper {
+}
+.ml7Dark .text-wrapper {
     position: relative;
     display: inline-block;
     padding-top: 0.2em;
     padding-right: 0.05em;
     padding-bottom: 0.1em;
     overflow: hidden;
-  }
-  .ml7Dark .letter {
+}
+.ml7Dark .letter {
     transform-origin: 0 100%;
     display: inline-block;
     line-height: 1em;
-  }
+}
 
-  /* society */
-  .ml9 {
+/* society */
+.ml9 {
     position: relative;
     font-weight: 200;
     font-size: 4em;
     color: #000;
     background-color: #fff;
-  }
-  
-  .ml9 .text-wrapper {
+}
+
+.ml9 .text-wrapper {
     position: relative;
     display: inline-block;
     padding-top: 0.2em;
     padding-right: 0.05em;
     padding-bottom: 0.1em;
     overflow: hidden;
-  }
-  
-  .ml9 .letter {
+}
+
+.ml9 .letter {
     transform-origin: 50% 100%;
     display: inline-block;
     line-height: 1em;
-  }
-  .ml9Dark {
+}
+.ml9Dark {
     position: relative;
     font-weight: 200;
     font-size: 4em;
     color: #fff;
     background-color: #000;
-  }
-  
-  .ml9Dark .text-wrapper {
+}
+
+.ml9Dark .text-wrapper {
     position: relative;
     display: inline-block;
     padding-top: 0.2em;
     padding-right: 0.05em;
     padding-bottom: 0.1em;
     overflow: hidden;
-  }
-  
-  .ml9Dark .letter {
+}
+
+.ml9Dark .letter {
     transform-origin: 50% 100%;
     display: inline-block;
     line-height: 1em;
-  }
-  
+}
+
 /* understrucket */
 .line {
     color: black;
@@ -348,11 +387,12 @@ h1 {
     display: flex;
     justify-content: center;
     border-radius: 10px;
+    flex-wrap: wrap;
 
 }
 /* Meny */
 .img-holder {
-    width: 200px;
+    width: 150px;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -393,6 +433,7 @@ img {
     text-decoration: none;
     font-weight: bold;
     color: rgb(209, 152, 46);
+    
 }
 .man {
     text-decoration: none;
@@ -414,3 +455,22 @@ img {
     font-weight: bold;
     color: rgb(73, 209, 46);
 }
+.searchBar1 {
+    float: right;
+
+}
+input {
+    border: 3px solid rgb(216, 155, 105);
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    padding: 0px 10px;
+}
+.search01 {
+    border: 3px solid rgb(216, 155, 105);
+    height: 40px;
+    width: 60px;
+    border-radius: 50px;
+    padding: 0px 10px;
+}
+

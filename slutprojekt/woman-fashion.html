@@ -6,15 +6,21 @@
     <title>Woman fashion</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <body class="woman1">
     <div class="kontainer">
         <button class="bredd3 btn btn-outline-warning" id="mode">Dark</button>
-        <h1 class="ml2">Woman fashion</h1>
-        <p class="introduction">As we told before, faashion changes really fast. Fashion had been with us for decades, changing as the times change. Men and women alike are influenced by fashion. However more women were more influenced than men as early as our history projects. Let's see how the fashion has changed the last 100 years.</p>
+        <div class="searchBar1">
+            <input type="text" id="searchBar" placeholder="Search...">
+            <span></span>
+            <button class="search01" onclick="search()">Done</button>
+        </div>
 
-        <div class="wrapper">
+        <h1 class="ml2">Woman fashion</h1>
+        <p class="introduction">As we told before, faashion changes really fast. Fashion had been with us for decades, changing as the times change. Men and women alike are influenced by fashion. However more women were more influenced than men as early as our history projects. Let's see how the fashion has changed the last 100 years. You'll see some examples of what women weared</p>
+
+        <nav class="wrapper">
             <div class="img-holder">
                 <figure>
                     <img src="./bilder/old-mens-fashion.jpg" alt="fashion">
@@ -45,139 +51,220 @@
                     <figcaption><a class="start" href="old.html">Home</a></figcaption>
                 </figure>
             </div>
-        </div>
-        <u class="line">
-            <h2 class="year">1920</h2>
-        </u>
-        <p class="text"> The roaring twenties was a golden era of fashion. WW1 left women desiring a simple, comfortable lifestyle and a fashion style that reflected the new modern age where young women outnumbered the older Edwardian generation. 1920s fashion was made for by the young and free spirited youth who discarded their corsets and showed off their jazz dancing legs. Many historians say the ’20s flat chested look was inspired by young boys, la garcone, yet if you look at 1910s girl’s clothing you will see drop-waist dresses in the same styles that were made for women after 1922. 1920s women for all ages and sizes embraced these youthful girly looks and genderless identities that enabled them to live in a care-free manner, pursuing new hobbies and opening new doors for women’s rights.</p>
-        <br>
-        <p class="text"></p>
-            <ul class="text">
-                <li>
-                     Below knee length drop waist dresses with a loose, straight fit
-                </li>
-                <li>
-                    Beaded evening dresses inspired by “flappers”
-                </li>
-                <li>
-                 Mary Jane or T-strap heels
-                </li>
-                <li>
-                    Casual sport golf knickers, argyle socks, blouse and tie
-                </li>
-                <li>
-                    Cocoon fur coats and fringe shawls
-                </li>
-                <li>
-                    Cloche hats and short bobbed hairstyles
-                </li>
-                <li>
-                    Bead or feather headbands for evening wear
-                </li>
-                <li>
-                    Long pearl necklaces, tassel necklaces, drop earrings, Art Deco color faux gemstones
-                </li>
-                <li>
-                    Small beaded purses held pretty makeup compacts and cigarette cases
-                </li>
-        </ul>
+        </nav>
+
+        <article>
+            <h2 style="text-decoration: underline;" class="year" id="1920s">1920</h2>
+
+            <p class="text"> The roaring twenties was a golden era of fashion. WW1 left women desiring a simple, comfortable lifestyle and a fashion style that reflected the new modern age where young women outnumbered the older Edwardian generation. 1920s fashion was made for by the young and free spirited youth who discarded their corsets and showed off their jazz dancing legs. Many historians say the ’20s flat chested look was inspired by young boys, la garcone, yet if you look at 1910s girl’s clothing you will see drop-waist dresses in the same styles that were made for women after 1922. 1920s women for all ages and sizes embraced these youthful girly looks and genderless identities that enabled them to live in a care-free manner, pursuing new hobbies and opening new doors for women’s rights. <a class="woman" href="https://vintagedancer.com/1920s/1920s-womens-fashion/">source</a></p>
+            <br>
+            <p class="text">Trends were:</p>
+            <div class="ul-wrapper">
+                <ul class="text">
+                    <li>
+                        Below knee length drop waist dresses with a loose, straight fit
+                    </li>
+                    <li>
+                        Beaded evening dresses inspired by “flappers”
+                    </li>
+                    <li>
+                        Mary Jane or T-strap heels
+                    </li>
+                    <li>
+                        Casual sport golf knickers, argyle socks, blouse and tie
+                    </li>
+                    <li>
+                        Cocoon fur coats and fringe shawls
+                    </li>
+                    <li>
+                        Cloche hats and short bobbed hairstyles
+                    </li>
+                    <li>
+                        Bead or feather headbands for evening wear
+                    </li>
+                    <li>
+                        Long pearl necklaces, tassel necklaces, drop earrings, Art Deco color faux gemstones
+                    </li>
+                    <li>
+                        Small beaded purses held pretty makeup compacts and cigarette cases
+                    </li>
+                </ul>
+                <img class="fashion" src="./bilder/1920.jpg" alt="fashion">
+            </div>
+            <h2 style="text-decoration: underline;" class="year" id="1930s">1930s</h2>
+            <p class="text">
+                The 1930s are a forgotten in-between decade of fashion, overshadowed by the economic turmoil of the Great Depression. Often lumped in with the 1920s or 1940s, the looks and trends of the thirties are truly one of a kind. There isn’t a fashion decade in the 20th century that embodied femininity in women and masculinity in men quite like the clothing of the 1930s.
+            </p>
+            <p class="text">From bias cut dresses for women to broad-shouldered suits for men, 1930s style clothing is a unique style that has seen some revival in recent years. Even the 70s boho style was heavily influenced by modest 30s fashion. We just can’t get enough Old Hollywood elegant gowns, dancing shoes, or casual sporty clothes with vintage glamour. <a class="woman" href="https://vintagedancer.com/1930s/">source</a></p>
+
+            <h2 style="text-decoration: underline;" class="year" id="1940s">1940s</h2>
+            <p class="text"> With the second World War (WWII) and clothing rationing, wartime fashion on a budget became the norm. 1940s fashion experienced deep changes, but also created some of the most flattering designs of the 20th century. The classic shirtwaist dress, wide-leg pants, bikini swimsuits, and pin up styles took root in the forties. Now you too can wear 1940s clothing with vintage-inspired and vintage reproduction clothes from both the USA and UK. <a class="woman" href="https://vintagedancer.com/1940s/">source</a></p>
+
+            <h2 style="text-decoration: underline;" class="year" id="1950s">1950s</h2>
+            <p class="text">1950s style clothing is timeless. Cool cats and hipsters made the 1950s decade iconic for its youthful freedoms and fun sense of style. Fifties fashion goes beyond poodle skirts and saddle shoes, however, because teenagers weren’t the only ones setting clothing trends. 1950s housewives played a role in defining the ultra-feminine style we love to wear today. <a class="woman" href="https://vintagedancer.com/1950s/">source</a></p>
+
+            <h2 style="text-decoration: underline;" class="year" id="1960s">1960s</h2>
+            <p class="text">TV shows like Mad Men made 1960s fashion popular again. Most mainstream fashion today is also heavily inspired by the 1960s. Knee length swing dresses, shift dresses, Mod colorblock dresses, wiggle dresses, mini skirts, crop pants and flare jeans are ’60s trends that are back in style for women. For men, it’s the skinny suits and ties, stingy brim hats, and monk strap shoes that create the hipster look. <a class="woman" href="https://vintagedancer.com/1960s/">source</a></p>
+
+            <h2 style="text-decoration: underline;" class="year" id="1970s">1970s</h2>
+            <p class="text">Grooving out of the Swinging Sixties and into the disco dancing 70s gave us a fabulous new wardrobe full of color, texture and retro patterns. Polyester jumpsuits, fringe jackets, flared pants, maxi dresses and retro T-shirts are just a few of our favorite women’s 70s clothes. The boho hippie style went back to past with granny boots, embroidered tunic shirts, suede vests and headbands. Now casual ’70s is making a comeback with denim jackets, bell bottom jeans, vintage tops, and sandals. Men’s clothing was similar – loon pants, patterned shirts, platform shoes, and big belts. Is was a decade of manly masochism.</p>
+            <p class="text">Finding 70s clothes to wear for an everyday retro fashion or 1970s disco party has become a lot easier thanks to the current trends. For costume parties, sticking to the classic 70s outfits and hippie costumes will always be in style. We browsed online and found many great 70s clothes for women and men to mix and match the perfect 70s outfit together. Both USA and UK shops were sourced in our selection. Pick a category below to get started and ask us for help if you can’t find what you are looking for. 70s fashion history articles are at the bottom of the page.<a class="woman" href="https://vintagedancer.com/1970s/">source</a></p>
+
+            <h2 style="text-decoration: underline;" class="year" id="1980s">1980s</h2>
+            <p class="text">When it comes to fashion, minimalism has been the go-to look for some time now, but there’s currently a change in the air. Perhaps feeling a little bored with all those simplistic styles, designers and style stars alike have brought forward a new wave of maximal fashion that appears straight from the ’80s. Big shoulders, bright colors, and plenty of statement styles are making fashion fun once again. Perfect for creating exciting and eye-catching outfits, this ’80s fashion trend promises to infuse your wardrobe with a new and glamorous sense of style.</p>
+            <p class="text">Fashion in the 1980s was all about excess. Everything was big, bold, and utterly glamorous. During the day, ladies rocked power suits with big shoulder pads to prove that they were just as powerful as the gents. By night, they got glammed-up in sequin and one-shoulder styles. A love of brands and designer labels was also evident during the decade. Towards the second half of the ’80s punk looks started trending thanks to the celebrities of the day. <a class="woman" href="https://www.thetrendspotter.net/80s-fashion/">source</a></p>
+
+            <h2 style="text-decoration: underline;" class="year" id="1990s">1990s</h2>
+            <p class="text">Women and girls fashion in the 1990s is very distinct. While not quite as loud as the eighties, the nineties took that attitude and tried to be a little smarter and a little classier. Sometimes designers succeeded, sometimes they didn’t.</p>
+            <p class="text">
+                Some common items of clothing from the 1990s: black leggings with oversized sweater, low heel shoes, flannel shirts, denim everything, t-shirts, sweatpants, skirts, Birkenstocks, solid colors, silk shirts, turtlenecks (under cardigans or sweaters), plain white Keds and army surplus clothing to name a few. <a class="woman" href="https://www.retrowaste.com/1990s/fashion-in-the-1990s/1990s-fashion-for-women-girls/">source</a></p>
+
+            <h2 style="text-decoration: underline;" class="year" id="2000s">2000s</h2>
+            <p class="text">Technology and Y2K had a huge impact on fashion in the early 2000s. The color palette was filled with shiny black tones and reflective metallics. While some Y2K trends were worn daily, many of these looks were reserved for going out. Popular outfits for women included mesh or handkerchief tops, box-pleated or leather skirts, shiny pants, and sparkly shoes. For men, Y2K looks usually involved leather jackets, a statement dress shirt, and chunky shoes. If you need inspiration, Britney Spears and *NSYNC were trendsetters for this type of style.</p>
+
+            <p class="text">Casual clothing and leisurewear were the other big trends of the early 2000s. Denim became a staple for men and women, going beyond jeans to shirts, jackets, and hats. If you’re putting together a casual style for women, think crop tops, hoodies, low-rise flared jeans, cargo pants, daisy dukes, jean skirts, off the shoulder tops, ribbed sweaters, with platform sandals, Ugg boots, or sneakers. Common looks for men included, distressed denim, cargo pants, tracksuits, rugby or polo shirts, flip flops, oxford shoes, and sneakers. <a class="woman" href="https://www.centralcasting.com/quick-guide-2000s-fashion/">source</a></p>
+
+            <h2 style="text-decoration: underline;" class="year" id="2010s">2010s</h2>
+            <h2 style="text-decoration: underline;" class="year" id="2020s">2020s</h2>
+        </article>
+
     </div>
+    <script>
+        /* Function och for, för search knapp och bar (så att man kan söka åren) */
+        function search() {
+            const elementInput = document.querySelector("#searchBar");
+            const arrayYears = ["1920s", "1920s", "1930s", "1940s", "1950s", "1960s", "1970s", "1980s", "1990s", "2000s", "2010s", "2020s"];
+
+            var search = elementInput.value;
+            let notSearched = true;
+
+            for (let i = 0; i < arrayYears.length; i++) {
+                if (search == arrayYears[i]) {
+                    console.log(arrayYears[i]);
+                    console.log(document.getElementById(arrayYears[i]));
+                    document.getElementById(arrayYears[i]).scrollIntoView();
+                    notSearched = false;
+                }
+            }
+
+            if (notSearched) {
+                alert("There is not such date at this site");
+            }
+        }
+
+        /* Js kod för rubriken, som jag hittade från nätet */
+        var textWrapper = document.querySelector('.ml2');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({
+                loop: true
+            })
+            .add({
+                targets: '.ml2 .letter',
+                scale: [4, 1],
+                opacity: [0, 1],
+                translateZ: 0,
+                easing: "easeOutExpo",
+                duration: 950,
+                delay: (el, i) => 70 * i
+            }).add({
+                targets: '.ml2',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+
+        /* min funktion för changing */
+        document.getElementById("mode").addEventListener("click", changeMode);
+
+        function changeMode() {
+            var button = document.getElementById("mode");
+
+            let modeElems = document.getElementsByClassName("woman1");
+            if (modeElems.length == 0) {
+                modeElems = document.getElementsByClassName("woman1Dark");
+                if (modeElems.length !== 0) {
+                    modeElems[0].className = "woman1";
+                }
+                button.innerHTML = "Dark";
+            } else {
+                modeElems[0].className = "woman1Dark";
+                button.innerHTML = "Light";
+            }
+
+            let modeClass = "introduction";
+            modeElems = document.getElementsByClassName("introduction");
+            if (modeElems.length == 0) {
+                modeElems = document.getElementsByClassName("introductionDark");
+            } else {
+                modeClass = "introductionDark";
+            }
+
+            /* loop */
+            n = modeElems.length;
+            for (let i = 0; i < n; i++) {
+                modeElems[0].className = modeClass;
+            }
+
+            modeElems = document.getElementsByClassName("ml2");
+            console.log(modeElems);
+            console.log(modeElems.length);
+            if (modeElems.length == 0) {
+                modeElems = document.getElementsByClassName("ml2Dark");
+                if (modeElems.length !== 0) {
+                    modeElems[0].className = "ml2";
+                }
+            } else {
+                modeElems[0].className = "ml2Dark";
+            }
+            n = modeElems.length;
+            for (let i = 0; i < n; i++) {
+                modeElems[0].className = modeClass;
+            }
+
+            modeElems = document.getElementsByClassName("year");
+            if (modeElems.length == 0) {
+                modeElems = document.getElementsByClassName("yearDark");
+                if (modeElems.length !== 0) {
+                    modeElems[0].className = "year";
+                }
+            } else {
+                modeElems[0].className = "yearDark";
+            }
+            n = modeElems.length;
+            for (let i = 0; i < n; i++) {
+                modeElems[0].className = modeClass;
+            }
+
+            modeElems = document.getElementsByClassName("text");
+            if (modeElems.length == 0) {
+                modeElems = document.getElementsByClassName("textDark");
+                if (modeElems.length !== 0) {
+                    modeElems[0].className = "text";
+                }
+            } else {
+                modeElems[0].className = "textDark";
+            }
+            n = modeElems.length;
+            for (let i = 0; i < n; i++) {
+                modeElems[0].className = modeClass;
+            }
+
+            modeElems = document.getElementsByClassName("line");
+            if (modeElems.length == 0) {
+                modeElems = document.getElementsByClassName("lineDark");
+                if (modeElems.length !== 0) {
+                    modeElems[0].className = "line";
+                }
+            } else {
+                modeElems[0].className = "lineDark";
+            }
+            n = modeElems.length;
+            for (let i = 0; i < n; i++) {
+                modeElems[0].className = modeClass;
+            }
+        }
+    </script>
 </body>
-<script>
-    var textWrapper = document.querySelector('.ml2');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-    anime.timeline({
-            loop: true
-        })
-        .add({
-            targets: '.ml2 .letter',
-            scale: [4, 1],
-            opacity: [0, 1],
-            translateZ: 0,
-            easing: "easeOutExpo",
-            duration: 950,
-            delay: (el, i) => 70 * i
-        }).add({
-            targets: '.ml2',
-            opacity: 0,
-            duration: 1000,
-            easing: "easeOutExpo",
-            delay: 1000
-        });
-
-    document.getElementById("mode").addEventListener("click", changeMode);
-
-
-    /* min funktion för changing */
-    function changeMode() {
-        var button = document.getElementById("mode");
-
-        let modeElems = document.getElementsByClassName("woman1");
-        if (modeElems.length == 0) {
-            modeElems = document.getElementsByClassName("woman1Dark");
-            if (modeElems.length !== 0) {
-                modeElems[0].className = "woman1";
-            }
-            button.innerHTML = "Dark";
-        } else {
-            modeElems[0].className = "woman1Dark";
-            button.innerHTML = "Light";
-        }
-
-        let modeClass = "introduction";
-        modeElems = document.getElementsByClassName("introduction");
-        if (modeElems.length == 0) {
-            modeElems = document.getElementsByClassName("introductionDark");
-        } else {
-            modeClass = "introductionDark";
-        }
-
-        /* loop */
-        const n = modeElems.length;
-        for (let i = 0; i < n; i++) {
-            modeElems[0].className = modeClass;
-        }
-
-        modeElems = document.getElementsByClassName("ml2");
-        if (modeElems.length == 0) {
-            modeElems = document.getElementsByClassName("ml2Dark");
-            if (modeElems.length !== 0) {
-                modeElems[0].className = "ml2";
-            }
-        } else {
-            modeElems[0].className = "ml2Dark";
-        }
-
-        modeElems = document.getElementsByClassName("year");
-        if (modeElems.length == 0) {
-            modeElems = document.getElementsByClassName("yearDark");
-            if (modeElems.length !== 0) {
-                modeElems[0].className = "year";
-            }
-        } else {
-            modeElems[0].className = "yearDark";
-        }
-
-        modeElems = document.getElementsByClassName("text");
-        if (modeElems.length == 0) {
-            modeElems = document.getElementsByClassName("textDark");
-            if (modeElems.length !== 0) {
-                modeElems[0].className = "text";
-            }
-        } else {
-            modeElems[0].className = "textDark";
-        }
-
-        modeElems = document.getElementsByClassName("line");
-        if (modeElems.length == 0) {
-            modeElems = document.getElementsByClassName("lineDark");
-            if (modeElems.length !== 0) {
-                modeElems[0].className = "line";
-            }
-        } else {
-            modeElems[0].className = "lineDark";
-        }
-    }
-</script>
 </html>

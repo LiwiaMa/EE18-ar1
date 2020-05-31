@@ -6,9 +6,9 @@
     <title>100 yers of fashion</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 <body class="society1">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <div class="kontainer">
         <button class="btn btn-outline-secondary" id="mode">Dark</button>
         <h1 class="ml9">
@@ -19,7 +19,7 @@
 
         <p class="introduction">Fashion changes really quicly. At this site you will get to know better how both clothing- and musicstyle has changed over past 100 years, what affection it had at our society, and how it still does change</p>
 
-        <div class="wrapper">
+        <nav class="wrapper">
             <div class="img-holder">
                 <figure>
                     <img src="./bilder/old-woman-fashion.jpg" alt="fashion">
@@ -50,69 +50,105 @@
                     <figcaption><a class="start" href="old.html">Home</a></figcaption>
                 </figure>
             </div>
-        </div>
+        </nav>
+        <h2  style="text-decoration: underline;" class="year">Fashion's Impact on People</h2>
+        <p class="text">Millions of people are employed in the complex and interconnected chains that make up the global fashion industry. How the industry functions – from raw material production and processing to the manufacture and supply of goods – directly affects the people involved. </p>
+        <p class="text">The Mapping the Industry: Impact on People research focuses on that impact – on the workers themselves both adults and children, and also on their families and communities. For the vast majority of adult workers involved, the industry is a mixed blessing at best. It creates millions of jobs – especially for women – in places where work is key to survival.</p>
+        <p class="text">In so doing, fashion could be having a clear, positive impact, helping millions to work their way out of poverty. However, the reality is that many of these workers are at the harsh end of fashion, expected to undertake difficult, menial or hazardous work for long hours in poor conditions for low pay, or even as forced labourers.</p>
+        <p class="text">Putting a number on this huge, multi-faceted impact is difficult. The sheer scale and reach of the chains of production – in terms of geography, output and process – makes them hard to compare and measure. </p>
+        <p class="text">Stories, research and examples from across the industry do exist thanks to the campaigning work by various organisations pursuing particular issues. But merging these into an accurate, overall picture of the industry’s impact on the people involved is tricky.</p>
+        <p class="text">Because of these constraints, the pieces here offer insights into the direct and indirect impacts of working in the fashion industry, rather than a globally measured assessment. Data on key countries and assumptions are used where possible, as well as research from non-governmental organisations into different aspects of supply chain work.</p>
+        <p class="text">As with other elements of Mapping the Fashion Industry, the aim is to update as and when more research and data emerges. <a class="society" href="https://www.commonobjective.co/article/intro-fashion-s-impact-on-people">source</a></p>
     </div>
+    <script>
+        var textWrapper = document.querySelector('.ml9 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    
+    anime.timeline({loop: true})
+      .add({
+        targets: '.ml9 .letter',
+        scale: [0, 1],
+        duration: 1500,
+        elasticity: 600,
+        delay: (el, i) => 45 * (i+1)
+      }).add({
+        targets: '.ml9',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+    
+      document.getElementById("mode").addEventListener("click", changeMode);
+    
+          /* min funktion för changing */
+          function changeMode() {
+            var button = document.getElementById("mode");
+    
+            let modeElems = document.getElementsByClassName("society1");
+            if (modeElems.length == 0) {
+                modeElems = document.getElementsByClassName("society1Dark");
+                if (modeElems.length !== 0) {
+                    modeElems[0].className = "society1";
+                }
+                button.innerHTML = "Dark";
+            } else {
+                modeElems[0].className = "society1Dark";
+                button.innerHTML = "Light";
+            }
+    
+            let modeClass = "introduction";
+            modeElems = document.getElementsByClassName("introduction");
+            if (modeElems.length == 0) {
+                modeElems = document.getElementsByClassName("introductionDark");
+            } else {
+                modeClass = "introductionDark";
+            }
+    
+            /* loop */
+            const n = modeElems.length;
+            for (let i = 0; i < n; i++) {
+                modeElems[0].className = modeClass;
+            }
+    
+            modeElems = document.getElementsByClassName("ml9");
+            if (modeElems.length == 0) {
+                modeElems = document.getElementsByClassName("ml9Dark");
+                if (modeElems.length !== 0) {
+                    modeElems[0].className = "ml9";
+                }
+            } else {
+                modeElems[0].className = "ml9Dark";
+            }
+
+            modeElems = document.getElementsByClassName("year");
+            if (modeElems.length == 0) {
+                modeElems = document.getElementsByClassName("yearDark");
+                if (modeElems.length !== 0) {
+                    modeElems[0].className = "year";
+                }
+            } else {
+                modeElems[0].className = "yearDark";
+            }
+            n = modeElems.length;
+            for (let i = 0; i < n; i++) {
+                modeElems[0].className = modeClass;
+            }
+
+            modeElems = document.getElementsByClassName("text");
+            if (modeElems.length == 0) {
+                modeElems = document.getElementsByClassName("textDark");
+                if (modeElems.length !== 0) {
+                    modeElems[0].className = "text";
+                }
+            } else {
+                modeElems[0].className = "textDark";
+            }
+            n = modeElems.length;
+            for (let i = 0; i < n; i++) {
+                modeElems[0].className = modeClass;
+            }
+        }
+    </script>
 </body>
-<script>
-    var textWrapper = document.querySelector('.ml9 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml9 .letter',
-    scale: [0, 1],
-    duration: 1500,
-    elasticity: 600,
-    delay: (el, i) => 45 * (i+1)
-  }).add({
-    targets: '.ml9',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-
-  document.getElementById("mode").addEventListener("click", changeMode);
-
-      /* min funktion för changing */
-      function changeMode() {
-        var button = document.getElementById("mode");
-
-        let modeElems = document.getElementsByClassName("society1");
-        if (modeElems.length == 0) {
-            modeElems = document.getElementsByClassName("society1Dark");
-            if (modeElems.length !== 0) {
-                modeElems[0].className = "society1";
-            }
-            button.innerHTML = "Dark";
-        } else {
-            modeElems[0].className = "society1Dark";
-            button.innerHTML = "Light";
-        }
-
-        let modeClass = "introduction";
-        modeElems = document.getElementsByClassName("introduction");
-        if (modeElems.length == 0) {
-            modeElems = document.getElementsByClassName("introductionDark");
-        } else {
-            modeClass = "introductionDark";
-        }
-
-        /* loop */
-        const n = modeElems.length;
-        for (let i = 0; i < n; i++) {
-            modeElems[0].className = modeClass;
-        }
-
-        modeElems = document.getElementsByClassName("ml9");
-        if (modeElems.length == 0) {
-            modeElems = document.getElementsByClassName("ml9Dark");
-            if (modeElems.length !== 0) {
-                modeElems[0].className = "ml9";
-            }
-        } else {
-            modeElems[0].className = "ml9Dark";
-        }
-    }
-</script>
 </html>
