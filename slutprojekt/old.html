@@ -11,14 +11,15 @@
 <body class="old1">
 
     <div class="kontainer">
-        <button class="btn btn-outline-info" id="mode">Dark</button>
-        <h1 class="ml3 ">100 years of fashion</h1>
-        
-
-        <p class="introduction">Fashion changes really quicly. At this site you will get to know better how both clothing- and musicstyle has changed over past 100 years, what affection it had at our society, and how it still does change</p>
-        <p class="introduction">Fashion refers to the styles of dress that are currently popular. It goes beyond just clothes, though. It can extend to shoes, jewelry and even how you style your hair.
-            For many people, fashion is a high priority. It's important to some people to wear only the latest fashions and styles. For others, though, keeping up with the trends isn't that important.</p>
-
+        <header>
+            <button class="btn btn-outline-info" id="mode">Dark</button>
+            <h1 class="ml3 ">100 years of fashion</h1>
+        </header>
+        <main>
+            <p class="introduction">Fashion changes really quicly. At this site you will get to know better how both clothing- and musicstyle has changed over past 100 years, what affection it had at our society, and how it still does change</p>
+            
+            <p class="introduction">Fashion refers to the styles of dress that are currently popular. It goes beyond just clothes, though. It can extend to shoes, jewelry and even how you style your hair. For many people, fashion is a high priority. It's important to some people to wear only the latest fashions and styles. For others, though, keeping up with the trends isn't that important.</p>
+        </main>
         <div class="wrapper">
             <div class="img-holder">
                 <figure>
@@ -56,7 +57,7 @@
         /* kopierade från "https://tobiasahlin.com/moving-letters/#3" */
         var textWrapper = document.querySelector('.ml3');
         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-    
+
         anime.timeline({
                 loop: true
             })
@@ -73,14 +74,14 @@
                 easing: "easeOutExpo",
                 delay: 1000
             });
-    
+
         document.getElementById("mode").addEventListener("click", changeMode);
-    
-    
+
+
         /* min funktion för changing */
         function changeMode() {
             var button = document.getElementById("mode");
-    
+
             let modeElems = document.getElementsByClassName("old1");
             if (modeElems.length == 0) {
                 modeElems = document.getElementsByClassName("old1Dark");
@@ -92,7 +93,7 @@
                 modeElems[0].className = "old1Dark";
                 button.innerHTML = "Light";
             }
-    
+
             let modeClass = "introduction";
             modeElems = document.getElementsByClassName("introduction");
             if (modeElems.length == 0) {
@@ -100,13 +101,13 @@
             } else {
                 modeClass = "introductionDark";
             }
-    
+
             /* loop */
             const n = modeElems.length;
             for (let i = 0; i < n; i++) {
                 modeElems[0].className = modeClass;
             }
-    
+
             modeElems = document.getElementsByClassName("ml3");
             if (modeElems.length == 0) {
                 modeElems = document.getElementsByClassName("ml3Dark");
@@ -120,4 +121,3 @@
     </script>
 </body>
 </html>
-
