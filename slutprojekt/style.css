@@ -446,19 +446,137 @@ img {
 input {
     border: 3px solid rgb(216, 155, 105);
     height: 40px;
-    width: 100px;
+    width: 150px;
     border-radius: 50px;
     padding: 0px 10px;
 }
 .search01 {
     border: 3px solid rgb(216, 155, 105);
     height: 40px;
-    width: 57Spx;
+    width: 57px;
     border-radius: 50px;
     padding: 0px 10px;
 }
-@media(max-width: 1100px) {
-    .kontainer {
-        margin: 0;
+@media(max-width: 500px) {
+    /*kontainer responsiv*/
+    .man1 .kontainer {
+        margin: auto;
+    }
+    .man1Dark .kontainer {
+        margin: auto;
+    }
+    .woman1 .kontainer {
+        margin: auto;
+    }
+    .woman1Dark .kontainer {
+        margin: auto;
+    }
+    .music1 .kontainer {
+        margin: auto;
+    }
+    .music1Dark .kontainer {
+        margin: auto;
+    }
+    .society1 .kontainer {
+        margin: auto;
+    }
+    .society1Dark .kontainer {
+        margin: auto;
+    }
+    .changes1 .kontainer {
+        margin: auto;
+    }
+    .changes1Dark .kontainer {
+        margin: auto;
+    }
+    .old1 .kontainer {
+        margin: auto;
+    }
+    .old1Dark .kontainer {
+        margin: auto;
+    }
+    /* rubriker */
+    .ml12 {
+        font-size: 1.1em;
+        letter-spacing: 0.1em;
+    }
+    .ml12Dark {
+        font-size: 1.1em;
+        letter-spacing: 0.1em;
+    }
+    .ml2 {
+        font-size: 1.1em;
+        letter-spacing: 0.1em;
+    }
+    .ml2Dark {
+        font-size: 1.1em;
+        letter-spacing: 0.1em;
+    }
+    .ml7 {
+        font-size: 1.3em;
+        letter-spacing: 0.1em;
+    }
+    .ml7Dark {
+        font-size: 1.3em;
+        letter-spacing: 0.1em;
+    }
+    .ml9 {
+        font-size: 1.3em;
+        letter-spacing: 0.1em;
+    }
+    .ml9Dark {
+        font-size: 1.3em;
+        letter-spacing: 0.1em;
+    }
+    .ml3 {
+        font-size: 1.3em;
+        letter-spacing: 0.1em;
+    }
+    .ml3Dark {
+        font-size: 1.3em;
+        letter-spacing: 0.1em;
+    }
+    /* searchbar */
+    input {
+        width: 80px;
+        height: 30px;
+        font-size: 13px;
+    }
+    .search01 {
+        width: 50px;
+        height: 30px;
+        font-size: 13px;
+    }
+    /* text */
+    .introduction {
+        font-size: 16px;
+    }
+    .introductionDark {
+        font-size: 16px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .textDark {
+        font-size: 15px;
+    }
+    .year {
+        font-size: 20px;
+    }
+    .yearDark {
+        font-size: 20px;
+    }
+    /* meny */
+    .img-holder {
+        width: 80px;
+    }
+    .img-holder figure {
+        background: #FFF;
+        padding: 5px;
+        border-radius: 5px;
+        margin: 8px auto;
+    }
+    .img-holder figure figcaption {
+        font-size: 15px;
     }
 }
