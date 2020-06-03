@@ -346,24 +346,28 @@ h1 {
     font-size: 23px;
     font-family: 'Caveat', cursive;
     background-color: white;
+    margin-bottom: 15px;
 }
 .introductionDark {
     font-size: 23px;
     font-family: 'Caveat', cursive;
     background-color: black;
     color: white;
+    margin-bottom: 15px;
 }
 .text {
     font-size: 22px;
     font-family: 'Open Sans Condensed', sans-serif;
     color: black;
     background-color: white;
+    margin-bottom: 15px;
 }
 .textDark {
     font-size: 22px;
     font-family: 'Open Sans Condensed', sans-serif;
     color: white;
     background-color: black;
+    margin-bottom: 15px;
 }
 
 /* Meny */
@@ -459,40 +463,7 @@ input {
 }
 @media(max-width: 500px) {
     /*kontainer responsiv*/
-    .man1 .kontainer {
-        margin: 0;
-    }
-    .man1Dark .kontainer {
-        margin: 0;
-    }
-    .woman1 .kontainer {
-        margin: 0;
-    }
-    .woman1Dark .kontainer {
-        margin: 0;
-    }
-    .music1 .kontainer {
-        margin: 0;
-    }
-    .music1Dark .kontainer {
-        margin: 0;
-    }
-    .society1 .kontainer {
-        margin: 0;
-    }
-    .society1Dark .kontainer {
-        margin: 0;
-    }
-    .changes1 .kontainer {
-        margin: 0;
-    }
-    .changes1Dark .kontainer {
-        margin: 0;
-    }
-    .old1 .kontainer {
-        margin: 0;
-    }
-    .old1Dark .kontainer {
+    .man1 .kontainer, .man1Dark .kontainer, .woman1 .kontainer, .woman1Dark .kontainer, .music1 .kontainer, .music1Dark .kontainer, .society1 .kontainer, .society1Dark .kontainer, .changes1 .kontainer, .changes1Dark .kontainer, .old1 .kontainer, .old1Dark .kontainer {
         margin: 0;
     }
     /* rubriker */
@@ -550,9 +521,11 @@ input {
     /* text */
     .introduction {
         font-size: 16px;
+        margin-bottom: 10px;
     }
     .introductionDark {
         font-size: 16px;
+        margin-bottom: 10px;
     }
     .text {
         font-size: 15px;
@@ -562,9 +535,12 @@ input {
     }
     .year {
         font-size: 20px;
+        text-decoration: underline;
+        margin-bottom: 10px;
     }
     .yearDark {
         font-size: 20px;
+        margin-bottom: 10px;
     }
     /* meny */
     .img-holder {
