@@ -460,40 +460,40 @@ input {
 @media(max-width: 500px) {
     /*kontainer responsiv*/
     .man1 .kontainer {
-        margin: auto;
+        margin: 0;
     }
     .man1Dark .kontainer {
-        margin: auto;
+        margin: 0;
     }
     .woman1 .kontainer {
-        margin: auto;
+        margin: 0;
     }
     .woman1Dark .kontainer {
-        margin: auto;
+        margin: 0;
     }
     .music1 .kontainer {
-        margin: auto;
+        margin: 0;
     }
     .music1Dark .kontainer {
-        margin: auto;
+        margin: 0;
     }
     .society1 .kontainer {
-        margin: auto;
+        margin: 0;
     }
     .society1Dark .kontainer {
-        margin: auto;
+        margin: 0;
     }
     .changes1 .kontainer {
-        margin: auto;
+        margin: 0;
     }
     .changes1Dark .kontainer {
-        margin: auto;
+        margin: 0;
     }
     .old1 .kontainer {
-        margin: auto;
+        margin: 0;
     }
     .old1Dark .kontainer {
-        margin: auto;
+        margin: 0;
     }
     /* rubriker */
     .ml12 {
